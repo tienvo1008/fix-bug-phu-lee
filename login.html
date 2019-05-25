@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .form-login {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .box {
+        text-align: center;
+    }
+
+    input[type=text],
+    input[type=password] {
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #5B9BD5;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="form-login">
+        <form method="post">
+            <div class="container">
+                <div class="box">
+                    <h2> 総合ジャーナル</h2>
+                </div>
+                <div class="box">
+                    <input type="text" placeholder="メールの入力" name="username" required>
+                </div>
+                <div class="box">
+                    <input type="text" placeholder="パスワードの入力" name="password" required>
+                </div>
+                <div class="box">
+                    <button type="submit">ログイン</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
